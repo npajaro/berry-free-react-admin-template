@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const NavMotion = ({ children }) => {
     const motionVariants = {
         initial: {
-            opacity: 0,
+            opacity: 100,
             scale: 0.99
         },
         in: {

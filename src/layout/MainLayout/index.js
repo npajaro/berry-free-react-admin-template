@@ -24,10 +24,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({
     ...(!open && {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
-        transition: theme.transitions.create('margin', {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen
-        }),
+        transition: 'ease-in',
         [theme.breakpoints.up('md')]: {
             marginLeft: -(drawerWidth - 20),
             width: `calc(100% - ${drawerWidth}px)`
@@ -88,7 +85,7 @@ const MainLayout = () => {
                 enableColorOnDark
                 position="fixed"
                 color="inherit"
-                elevation={0}
+                elevation={1}
                 sx={{
                     bgcolor: theme.palette.background.default,
                     transition: leftDrawerOpened ? theme.transitions.create('width') : 'none'

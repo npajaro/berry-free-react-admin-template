@@ -22,7 +22,7 @@ import TableChartOutlinedIcon from '@mui/icons-material/TableChartOutlined';
 // styles
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 10,
-    borderRadius: 30,
+    borderRadius: 1,
     [`&.${linearProgressClasses.colorPrimary}`]: {
         backgroundColor: '#fff'
     },
@@ -112,11 +112,11 @@ const MenuCard = () => {
                                     Get Extra Space
                                 </Typography>
                             }
-                            secondary={<Typography variant="caption"> 28/23 GB</Typography>}
+                            secondary={<Typography variant="caption"> 28/29 GB</Typography>}
                         />
                     </ListItem>
                 </List>
-                <LinearProgressWithLabel value={80} />
+                <LinearProgressWithLabel value={90} />
             </CardContent>
         </CardStyle>
     );

@@ -12,6 +12,7 @@ import NotificationSection from './NotificationSection';
 
 // assets
 import { IconMenu2 } from '@tabler/icons';
+import { red } from '@mui/material/colors';
 
 // ==============================|| MAIN NAVBAR / HEADER ||============================== //
 
@@ -33,15 +34,15 @@ const Header = ({ handleLeftDrawerToggle }) => {
                 <Box component="span" sx={{ display: { xs: 'none', md: 'block' }, flexGrow: 1 }}>
                     <LogoSection />
                 </Box>
-                <ButtonBase sx={{ borderRadius: '12px', overflow: 'hidden' }}>
+                <ButtonBase sx={{ borderRadius: '8px', overflow: 'hidden' }}>
                     <Avatar
                         variant="rounded"
                         sx={{
-                            ...theme.typography.commonAvatar,
-                            ...theme.typography.mediumAvatar,
-                            transition: 'all .2s ease-in-out',
-                            background: theme.palette.secondary.light,
-                            color: theme.palette.secondary.dark,
+                            ...theme.typography.main,
+                            ...theme.typography.main,
+                            transition: 'all .20s ease-in-out',
+                            background: red,
+                            color: red,
                             '&:hover': {
                                 background: theme.palette.secondary.dark,
                                 color: theme.palette.secondary.light
@@ -57,8 +58,8 @@ const Header = ({ handleLeftDrawerToggle }) => {
 
             {/* header search */}
             <SearchSection />
-            <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ flexGrow: 5 }} />
+            <Box sx={{ flexGrow: 5 }} />
 
             {/* notification & profile */}
             <NotificationSection />
